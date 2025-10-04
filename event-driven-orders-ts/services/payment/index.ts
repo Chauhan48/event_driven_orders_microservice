@@ -48,7 +48,6 @@ const logger = winston.createLogger({
                     if (type === 'InventoryReserved') {
                         logger.info(`Processing payment for order: ${orderId}`);
 
-                        // Simulate payment processing (70% success rate)
                         const success = Math.random() > 0.3;
                         const eventType = success ? 'PaymentCompleted' : 'PaymentFailed';
 
@@ -63,9 +62,9 @@ const logger = winston.createLogger({
                         });
 
                         if (success) {
-                            logger.info(`✓ Payment completed for order: ${orderId}`);
+                            logger.info(`Payment completed for order: ${orderId}`);
                         } else {
-                            logger.warn(`✗ Payment failed for order: ${orderId}`);
+                            logger.warn(`Payment failed for order: ${orderId}`);
                         }
                     }
                 }

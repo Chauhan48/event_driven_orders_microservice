@@ -46,16 +46,16 @@ const logger = winston.createLogger({
                     const { type, orderId } = message.message as any;
 
                     if (type === 'PaymentCompleted') {
-                        logger.info(`📧 NOTIFICATION: Payment successful for order ${orderId}`);
-                        logger.info(`   → Sending confirmation email to customer`);
+                        logger.info(`NOTIFICATION: Payment successful for order ${orderId}`);
+                        logger.info(`Sending confirmation email to customer`);
                         
                         await redisClient.xAdd('order_updates', '*', {
                             orderId,
                             status: 'COMPLETED'
                         });
                     } else if (type === 'PaymentFailed') {
-                        logger.warn(`📧 NOTIFICATION: Payment failed for order ${orderId}`);
-                        logger.warn(`   → Sending failure notification to customer`);
+                        logger.warn(`NOTIFICATION: Payment failed for order ${orderId}`);
+                        logger.warn(`Sending failure notification to customer`);
                         
                         await redisClient.xAdd('order_updates', '*', {
                             orderId,
