@@ -1,0 +1,31 @@
+{
+  "name": "event-driven-orders-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "order": "ts-node services/order/index.ts",
+    "inventory": "ts-node services/inventory/index.ts",
+    "payment": "ts-node services/payment/index.ts",
+    "notification": "ts-node services/notification/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@types/node": "^24.6.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.3",
+    "@types/uuid": "^10.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "redis": "^5.8.3",
+    "uuid": "^13.0.0",
+    "winston": "^3.18.3"
+  }
+}
