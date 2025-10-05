@@ -4,3 +4,10 @@
 [2025-10-04T10:25:10.435Z] [INVENTORY-SERVICE] INFO: Items requested: item1, item2
 [2025-10-04T10:25:10.442Z] [INVENTORY-SERVICE] INFO: ✓ Inventory reserved for order: order_1759573510429
 [2025-10-04T10:25:10.444Z] [INVENTORY-SERVICE] INFO: Updated inventory: {"item1":9,"item2":4,"item3":8,"item4":0}
+[2025-10-04T12:01:55.006Z] [INVENTORY-SERVICE] INFO: Initial inventory:
+[2025-10-04T12:01:55.025Z] [INVENTORY-SERVICE] INFO: Inventory Service started - listening for OrderCreated events
+[2025-10-04T12:05:08.692Z] [INVENTORY-SERVICE] INFO: Processing order: order_1759579503915
+[2025-10-04T12:05:08.702Z] [INVENTORY-SERVICE] INFO: Items requested: apple, rice
+[2025-10-04T12:05:08.718Z] [INVENTORY-SERVICE] WARN: ✗ Inventory failed for order: order_1759579503915 - Items not available
+[2025-10-04T12:39:20.410Z] [INVENTORY-SERVICE] ERROR: Error processing orders: Error: Socket closed unexpectedly
+[2025-10-04T12:39:20.457Z] [INVENTORY-SERVICE] ERROR: Error processing orders: Error: Socket closed unexpectedly

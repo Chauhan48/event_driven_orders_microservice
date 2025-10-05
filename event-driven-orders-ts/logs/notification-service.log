@@ -1,3 +1,6 @@
 [2025-10-04T10:25:03.701Z] [NOTIFICATION-SERVICE] INFO: Notification Service started - listening for payment events
 [2025-10-04T10:25:10.449Z] [NOTIFICATION-SERVICE] INFO: 📧 NOTIFICATION: Payment successful for order order_1759573510429
 [2025-10-04T10:25:10.450Z] [NOTIFICATION-SERVICE] INFO:    → Sending confirmation email to customer
+[2025-10-04T12:02:06.796Z] [NOTIFICATION-SERVICE] INFO: Notification Service started - listening for payment events
+[2025-10-04T12:39:20.400Z] [NOTIFICATION-SERVICE] ERROR: Error sending notifications: Error: Socket closed unexpectedly
+[2025-10-04T12:39:20.452Z] [NOTIFICATION-SERVICE] ERROR: Error sending notifications: Error: Socket closed unexpectedly
